@@ -1,8 +1,10 @@
+// seeds/03_conditions_type.js
+
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-exports.seed = async function (knex) {
+exports.seed = async function(knex) {
   await knex('conditions').del();
   await knex('conditions').insert([
     { name: 'Mint' },
